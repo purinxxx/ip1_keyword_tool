@@ -8,7 +8,7 @@ cnt = 0
 
 
 def imagetitle(raw):
-	s = re.search(r'\/(0.*)\.jpg', raw)
+	s = re.search(r'.*\/(.*)\.jpg', raw)
 	if s is not None:
 		return s.group(1)
 
